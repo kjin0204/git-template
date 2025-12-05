@@ -1,7 +1,8 @@
 # 1. 깃 커밋 템플릿 사용 하기
 ## 1.1. 깃 템플릿 등록 방법 
 - 현재 프로젝트만 템플릿 설정 `git config commit.template .git/.gitmessage.txt`
-    - 모든 프로젝트에 설정을 할 경우 `--global` 옵션 사용
+    - 모든 프로젝트에 적용 하고 싶을 경우 템플릿 파일 위치를 프로젝트 내부가 아닌 다른 위치에 템플릿을 생성(`—global` 옵션 사용)
+    - `git config --global commit.template ~/.gitmessage.txt`
 - 커밋 할 떄 `-m` 옵션을 사용 하지 않고 `git commit`만 입력 할 경우 
 .gitmessage.txt 파일이 템플릿 으로 설정 됨
 - .git/.gitmessage.txt 파일 내용
